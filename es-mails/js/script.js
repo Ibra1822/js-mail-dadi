@@ -29,11 +29,15 @@ for(let i = 0; i < listamail.length; i++){
 
 if(isAttivo){
 
-  risultato.innerHTML="Conferma mail Superata"
+  risultato.innerHTML="Conferma Mail Superata"
 
   document.querySelector('.container').style.display = "block";
 
 }else{
-  risultato.innerHTML="Conferma non superata non puoi accedere"
+  risultato.innerHTML="Siamo Spiacenti la sua Mail non ha superato il controllo per tanto non puo accedere e visualizzare le Mail "
+
+  alert('Non puoi accdere la tua Mail è SBAGLIATA ')
+
+
 }
 

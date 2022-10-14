@@ -12,6 +12,7 @@ let min = 1;
 let utente;
 let pc ;
 
+let risultato= document.getElementById('risultato');
 
 let btn = document.getElementById('click');
 
@@ -28,25 +29,60 @@ btn.addEventListener('click', function() {
   console.log(utente);
 
   console.log(pc);
-  
+
   if (utente > pc) {
 
-    console.log('vince utente')
+   document.getElementById('risultato-user').innerHTML= `
+   
+   Il numero che ti è uscito è ${utente}
+
+   `;
+
+
+   document.getElementById('risultato-pc').innerHTML= `
+
+    Il numero che è uscito al tuo pc è ${pc}
+
+   `
+
+   risultato.innerHTML= "Complimenti Hai Vinto!!!"
+
     
   }else if (utente < pc ) {
 
-    console.log('vince pc')
+    document.getElementById('risultato-user').innerHTML= `
+   
+    Il numero che ti è uscito è ${utente}
+ 
+    `;
+ 
+ 
+    document.getElementById('risultato-pc').innerHTML= `
+ 
+     Il numero che è uscito al tuo pc è ${pc}
+ 
+    `
+ 
+    risultato.innerHTML= "Oh No Hai Perso..."
+
 
   }else{
 
-    console.log('pareggio')
+    document.getElementById('risultato-user').innerHTML= `
+   
+    Il numero che ti è uscito è ${utente}
+ 
+    `;
+ 
+ 
+    document.getElementById('risultato-pc').innerHTML= `
+ 
+     Il numero che è uscito al tuo pc è ${pc}
+ 
+    `
+ 
+    risultato.innerHTML= "Incredibile è un pareggio si vede che passi tanto tempo sul tuo Pc!"
+    
   }
-
-
-
-
-
-
-
 
 })
